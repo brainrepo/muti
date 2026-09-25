@@ -1,0 +1,895 @@
+[
+ {
+  "title": "Symphony No. 5 in C Minor, Op. 67: I. Allegro con brio",
+  "parse": {
+   "catalog": [
+    "Op 67"
+   ],
+   "number": 5,
+   "key": "C minor",
+   "genre": "symphony",
+   "movement": {
+    "index": 1,
+    "title": "Allegro con brio"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 5 in C Minor, Op. 67: II. Andante con moto",
+  "parse": {
+   "catalog": [
+    "Op 67"
+   ],
+   "number": 5,
+   "movement": {
+    "index": 2,
+    "title": "Andante con moto"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 9 in D Minor, Op. 125 \"Choral\": IV. Finale. Presto - Allegro assai",
+  "parse": {
+   "catalog": [
+    "Op 125"
+   ],
+   "number": 9,
+   "key": "D minor",
+   "nickname": "Choral",
+   "movement": {
+    "index": 4,
+    "title": "Finale. Presto - Allegro assai"
+   }
+  }
+ },
+ {
+  "title": "Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 \"Moonlight\": I. Adagio sostenuto",
+  "parse": {
+   "catalog": [
+    "Op 27/2"
+   ],
+   "number": 14,
+   "key": "C# minor",
+   "genre": "sonata",
+   "nickname": "Moonlight",
+   "movement": {
+    "index": 1,
+    "title": "Adagio sostenuto"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 3 in E-Flat Major, Op. 55 \"Eroica\": I. Allegro con brio",
+  "parse": {
+   "catalog": [
+    "Op 55"
+   ],
+   "number": 3,
+   "key": "Eb major",
+   "nickname": "Eroica"
+  }
+ },
+ {
+  "title": "Piano Concerto No. 5 in E-Flat Major, Op. 73 \"Emperor\": II. Adagio un poco mosso",
+  "parse": {
+   "catalog": [
+    "Op 73"
+   ],
+   "number": 5,
+   "key": "Eb major",
+   "genre": "concerto",
+   "nickname": "Emperor",
+   "movement": {
+    "index": 2,
+    "title": "Adagio un poco mosso"
+   }
+  }
+ },
+ {
+  "title": "Violin Concerto in D Major, Op. 61: I. Allegro ma non troppo",
+  "parse": {
+   "catalog": [
+    "Op 61"
+   ],
+   "key": "D major",
+   "genre": "concerto",
+   "movement": {
+    "index": 1,
+    "title": "Allegro ma non troppo"
+   }
+  }
+ },
+ {
+  "title": "Piano Sonata No. 8 in C Minor, Op. 13 \"Pathétique\": II. Adagio cantabile",
+  "parse": {
+   "catalog": [
+    "Op 13"
+   ],
+   "number": 8,
+   "key": "C minor",
+   "nickname": "Pathétique"
+  }
+ },
+ {
+  "title": "Symphony No. 40 in G Minor, K. 550: I. Molto allegro",
+  "parse": {
+   "catalog": [
+    "K 550"
+   ],
+   "number": 40,
+   "key": "G minor",
+   "genre": "symphony"
+  }
+ },
+ {
+  "title": "Eine kleine Nachtmusik, K. 525: I. Allegro",
+  "parse": {
+   "catalog": [
+    "K 525"
+   ],
+   "movement": {
+    "index": 1,
+    "title": "Allegro"
+   }
+  }
+ },
+ {
+  "title": "Piano Concerto No. 21 in C Major, K. 467: II. Andante",
+  "parse": {
+   "catalog": [
+    "K 467"
+   ],
+   "number": 21,
+   "key": "C major",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Requiem in D Minor, K. 626: Lacrimosa",
+  "parse": {
+   "catalog": [
+    "K 626"
+   ],
+   "key": "D minor",
+   "genre": "requiem",
+   "movement": {
+    "title": "Lacrimosa"
+   }
+  }
+ },
+ {
+  "title": "Die Zauberflöte, K. 620: Der Hölle Rache kocht in meinem Herzen",
+  "parse": {
+   "catalog": [
+    "K 620"
+   ],
+   "movement": {
+    "title": "Der Hölle Rache kocht in meinem Herzen"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 41 in C Major, K. 551 \"Jupiter\": IV. Molto allegro - 2011 Remastered Version",
+  "parse": {
+   "catalog": [
+    "K 551"
+   ],
+   "number": 41,
+   "nickname": "Jupiter",
+   "movement": {
+    "index": 4,
+    "title": "Molto allegro"
+   }
+  }
+ },
+ {
+  "title": "Brandenburg Concerto No. 3 in G Major, BWV 1048: I. Allegro",
+  "parse": {
+   "catalog": [
+    "BWV 1048"
+   ],
+   "number": 3,
+   "key": "G major",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Orchestral Suite No. 3 in D Major, BWV 1068: II. Air",
+  "parse": {
+   "catalog": [
+    "BWV 1068"
+   ],
+   "number": 3,
+   "key": "D major",
+   "genre": "suite",
+   "movement": {
+    "index": 2,
+    "title": "Air"
+   }
+  }
+ },
+ {
+  "title": "The Well-Tempered Clavier, Book 1: Prelude & Fugue No. 1 in C Major, BWV 846",
+  "parse": {
+   "catalog": [
+    "BWV 846"
+   ],
+   "number": 1,
+   "key": "C major"
+  }
+ },
+ {
+  "title": "Goldberg Variations, BWV 988: Aria",
+  "parse": {
+   "catalog": [
+    "BWV 988"
+   ],
+   "genre": "variations",
+   "movement": {
+    "title": "Aria"
+   }
+  }
+ },
+ {
+  "title": "Toccata and Fugue in D Minor, BWV 565",
+  "parse": {
+   "catalog": [
+    "BWV 565"
+   ],
+   "key": "D minor",
+   "genre": "toccata"
+  }
+ },
+ {
+  "title": "Cello Suite No. 1 in G Major, BWV 1007: I. Prélude",
+  "parse": {
+   "catalog": [
+    "BWV 1007"
+   ],
+   "number": 1,
+   "key": "G major",
+   "genre": "suite",
+   "movement": {
+    "index": 1,
+    "title": "Prélude"
+   }
+  }
+ },
+ {
+  "title": "Concerto for Two Violins in D Minor, BWV 1043: I. Vivace",
+  "parse": {
+   "catalog": [
+    "BWV 1043"
+   ],
+   "key": "D minor",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Sonata No. 1 in G Minor, BWV 1001: IV. Presto",
+  "parse": {
+   "catalog": [
+    "BWV 1001"
+   ],
+   "number": 1,
+   "key": "G minor",
+   "genre": "sonata"
+  }
+ },
+ {
+  "title": "Chaconne (from Partita No. 2 in D Minor, BWV 1004)",
+  "parse": {
+   "catalog": [
+    "BWV 1004"
+   ],
+   "key": "D minor"
+  }
+ },
+ {
+  "title": "Mass in B Minor, BWV 232: Kyrie",
+  "parse": {
+   "catalog": [
+    "BWV 232"
+   ],
+   "key": "B minor",
+   "genre": "mass"
+  }
+ },
+ {
+  "title": "Ave Maria, D. 839",
+  "parse": {
+   "catalog": [
+    "D 839"
+   ]
+  }
+ },
+ {
+  "title": "Die schöne Müllerin, D. 795: No. 1, Das Wandern",
+  "parse": {
+   "catalog": [
+    "D 795"
+   ],
+   "movement": {
+    "index": 1,
+    "title": "Das Wandern"
+   }
+  }
+ },
+ {
+  "title": "Winterreise, D. 911: 1. Gute Nacht",
+  "parse": {
+   "catalog": [
+    "D 911"
+   ],
+   "movement": {
+    "index": 1,
+    "title": "Gute Nacht"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 8 in B Minor, D. 759 \"Unfinished\": I. Allegro moderato",
+  "parse": {
+   "catalog": [
+    "D 759"
+   ],
+   "number": 8,
+   "key": "B minor",
+   "nickname": "Unfinished"
+  }
+ },
+ {
+  "title": "Piano Quintet in A Major, D. 667 \"Trout\": IV. Andantino - Allegretto",
+  "parse": {
+   "catalog": [
+    "D 667"
+   ],
+   "key": "A major",
+   "genre": "quintet",
+   "nickname": "Trout",
+   "movement": {
+    "index": 4,
+    "title": "Andantino - Allegretto"
+   }
+  }
+ },
+ {
+  "title": "Impromptu in G-Flat Major, D. 899 No. 3",
+  "parse": {
+   "catalog": [
+    "D 899/3"
+   ],
+   "key": "Gb major",
+   "genre": "impromptu"
+  }
+ },
+ {
+  "title": "String Quartet No. 14 in D Minor, D. 810 \"Death and the Maiden\": I. Allegro",
+  "parse": {
+   "catalog": [
+    "D 810"
+   ],
+   "number": 14,
+   "key": "D minor",
+   "genre": "quartet",
+   "nickname": "Death and the Maiden"
+  }
+ },
+ {
+  "title": "Piano Trio No. 2 in E-Flat Major, D. 929: II. Andante con moto",
+  "parse": {
+   "catalog": [
+    "D 929"
+   ],
+   "number": 2,
+   "key": "Eb major",
+   "genre": "trio",
+   "movement": {
+    "index": 2,
+    "title": "Andante con moto"
+   }
+  }
+ },
+ {
+  "title": "The Four Seasons, Violin Concerto No. 1 in E Major, Op. 8 No. 1, RV 269 \"Spring\": I. Allegro",
+  "parse": {
+   "catalog": [
+    "Op 8/1",
+    "RV 269"
+   ],
+   "number": 1,
+   "key": "E major",
+   "genre": "concerto",
+   "nickname": "Spring",
+   "movement": {
+    "index": 1,
+    "title": "Allegro"
+   }
+  }
+ },
+ {
+  "title": "Concerto Grosso in D Minor, Op. 3 No. 11, RV 565: I. Allegro",
+  "parse": {
+   "catalog": [
+    "Op 3/11",
+    "RV 565"
+   ],
+   "key": "D minor"
+  }
+ },
+ {
+  "title": "Symphony No. 94 in G Major, Hob. I:94 \"Surprise\": II. Andante",
+  "parse": {
+   "catalog": [
+    "Hob i:94"
+   ],
+   "number": 94,
+   "key": "G major",
+   "nickname": "Surprise"
+  }
+ },
+ {
+  "title": "The Creation, Hob. XXI:2: Part 1: The Heavens Are Telling",
+  "parse": {
+   "catalog": [
+    "Hob xxi:2"
+   ],
+   "movement": {
+    "title": "Part 1: The Heavens Are Telling"
+   }
+  }
+ },
+ {
+  "title": "Trumpet Concerto in E-Flat Major, Hob. VIIe:1: III. Finale. Allegro",
+  "parse": {
+   "catalog": [
+    "Hob viie:1"
+   ],
+   "key": "Eb major",
+   "genre": "concerto",
+   "movement": {
+    "index": 3,
+    "title": "Finale. Allegro"
+   }
+  }
+ },
+ {
+  "title": "Messiah, HWV 56: Hallelujah",
+  "parse": {
+   "catalog": [
+    "HWV 56"
+   ],
+   "movement": {
+    "title": "Hallelujah"
+   }
+  }
+ },
+ {
+  "title": "Water Music, Suite No. 2 in D Major, HWV 349: Alla Hornpipe",
+  "parse": {
+   "catalog": [
+    "HWV 349"
+   ],
+   "number": 2,
+   "key": "D major",
+   "genre": "suite"
+  }
+ },
+ {
+  "title": "Nocturne No. 2 in E-Flat Major, Op. 9 No. 2",
+  "parse": {
+   "catalog": [
+    "Op 9/2"
+   ],
+   "number": 2,
+   "key": "Eb major",
+   "genre": "nocturne"
+  }
+ },
+ {
+  "title": "Piano Concerto No. 1 in B-Flat Minor, Op. 23: I. Allegro non troppo e molto maestoso",
+  "parse": {
+   "catalog": [
+    "Op 23"
+   ],
+   "number": 1,
+   "key": "Bb minor",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Swan Lake, Op. 20: Scene (Moderato)",
+  "parse": {
+   "catalog": [
+    "Op 20"
+   ],
+   "movement": {
+    "title": "Scene (Moderato)"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 6 in B Minor, Op. 74 \"Pathétique\": III. Allegro molto vivace",
+  "parse": {
+   "catalog": [
+    "Op 74"
+   ],
+   "number": 6,
+   "key": "B minor",
+   "nickname": "Pathétique",
+   "movement": {
+    "index": 3,
+    "title": "Allegro molto vivace"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 5 in E Minor, Op. 64, TH 29: II. Andante cantabile, con alcuna licenza",
+  "parse": {
+   "catalog": [
+    "Op 64",
+    "TH 29"
+   ],
+   "number": 5,
+   "key": "E minor"
+  }
+ },
+ {
+  "title": "Peer Gynt Suite No. 1, Op. 46: I. Morning Mood",
+  "parse": {
+   "catalog": [
+    "Op 46"
+   ],
+   "number": 1,
+   "genre": "suite",
+   "movement": {
+    "index": 1,
+    "title": "Morning Mood"
+   }
+  }
+ },
+ {
+  "title": "The Planets, Op. 32: Mars, the Bringer of War",
+  "parse": {
+   "catalog": [
+    "Op 32"
+   ],
+   "movement": {
+    "title": "Mars, the Bringer of War"
+   }
+  }
+ },
+ {
+  "title": "Le Sacre du printemps: Part I: Adoration of the Earth",
+  "parse": {
+   "catalog": [],
+   "movement": {
+    "title": "Part I: Adoration of the Earth"
+   }
+  }
+ },
+ {
+  "title": "Pictures at an Exhibition: Promenade",
+  "parse": {
+   "catalog": [],
+   "movement": {
+    "title": "Promenade"
+   }
+  }
+ },
+ {
+  "title": "Suite bergamasque, L. 75: III. Clair de lune",
+  "parse": {
+   "catalog": [
+    "L 75"
+   ],
+   "genre": "suite",
+   "movement": {
+    "index": 3,
+    "title": "Clair de lune"
+   }
+  }
+ },
+ {
+  "title": "Prélude à l'après-midi d'un faune, L. 86",
+  "parse": {
+   "catalog": [
+    "L 86"
+   ],
+   "genre": "prelude"
+  }
+ },
+ {
+  "title": "Gymnopédie No. 1",
+  "parse": {
+   "catalog": [],
+   "number": 1
+  }
+ },
+ {
+  "title": "Boléro, M. 81",
+  "parse": {
+   "catalog": [
+    "M 81"
+   ]
+  }
+ },
+ {
+  "title": "Piano Concerto in G Major, M. 83: II. Adagio assai",
+  "parse": {
+   "catalog": [
+    "M 83"
+   ],
+   "key": "G major",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Symphony No. 5 in C-Sharp Minor: IV. Adagietto. Sehr langsam",
+  "parse": {
+   "catalog": [],
+   "number": 5,
+   "key": "C# minor",
+   "genre": "symphony",
+   "movement": {
+    "index": 4,
+    "title": "Adagietto. Sehr langsam"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 9 in E Minor, Op. 95, B. 178 \"From the New World\": II. Largo",
+  "parse": {
+   "catalog": [
+    "Op 95",
+    "B 178"
+   ],
+   "number": 9,
+   "key": "E minor",
+   "nickname": "From the New World"
+  }
+ },
+ {
+  "title": "Slavonic Dance No. 2 in E Minor, Op. 72 No. 2, B. 147",
+  "parse": {
+   "catalog": [
+    "Op 72/2",
+    "B 147"
+   ],
+   "number": 2,
+   "key": "E minor"
+  }
+ },
+ {
+  "title": "Cello Concerto in E Minor, Op. 85: I. Adagio - Moderato",
+  "parse": {
+   "catalog": [
+    "Op 85"
+   ],
+   "key": "E minor",
+   "genre": "concerto",
+   "movement": {
+    "index": 1,
+    "title": "Adagio - Moderato"
+   }
+  }
+ },
+ {
+  "title": "Cello Concerto in B Minor, Op. 104, B. 191: I. Allegro",
+  "parse": {
+   "catalog": [
+    "Op 104",
+    "B 191"
+   ],
+   "key": "B minor"
+  }
+ },
+ {
+  "title": "Hungarian Rhapsody No. 2 in C-Sharp Minor, S. 244 No. 2",
+  "parse": {
+   "catalog": [
+    "S 244/2"
+   ],
+   "number": 2,
+   "key": "C# minor",
+   "genre": "rhapsody"
+  }
+ },
+ {
+  "title": "Liebestraum No. 3 in A-Flat Major, S. 541",
+  "parse": {
+   "catalog": [
+    "S 541"
+   ],
+   "number": 3,
+   "key": "Ab major"
+  }
+ },
+ {
+  "title": "Piano Sonata in B Minor, S. 178",
+  "parse": {
+   "catalog": [
+    "S 178"
+   ],
+   "key": "B minor",
+   "genre": "sonata"
+  }
+ },
+ {
+  "title": "Sinfonia n. 5 in do minore, op. 67: I. Allegro con brio",
+  "parse": {
+   "catalog": [
+    "Op 67"
+   ],
+   "number": 5,
+   "key": "C minor",
+   "genre": "symphony",
+   "movement": {
+    "index": 1,
+    "title": "Allegro con brio"
+   }
+  }
+ },
+ {
+  "title": "Sonata per pianoforte n. 14 in do diesis minore, op. 27 n. 2",
+  "parse": {
+   "catalog": [
+    "Op 27/2"
+   ],
+   "number": 14,
+   "key": "C# minor",
+   "genre": "sonata"
+  }
+ },
+ {
+  "title": "Sinfonia n. 3 in mi bemolle maggiore, op. 55 \"Eroica\"",
+  "parse": {
+   "catalog": [
+    "Op 55"
+   ],
+   "number": 3,
+   "key": "Eb major",
+   "nickname": "Eroica"
+  }
+ },
+ {
+  "title": "Sinfonie Nr. 3 Es-Dur, Op. 55 \"Eroica\": I. Allegro con brio",
+  "parse": {
+   "catalog": [
+    "Op 55"
+   ],
+   "number": 3,
+   "key": "Eb major",
+   "genre": "symphony",
+   "nickname": "Eroica"
+  }
+ },
+ {
+  "title": "Klavierkonzert Nr. 5 Es-Dur, Op. 73: II. Adagio un poco mosso",
+  "parse": {
+   "catalog": [
+    "Op 73"
+   ],
+   "number": 5,
+   "key": "Eb major",
+   "genre": "concerto"
+  }
+ },
+ {
+  "title": "Streichquartett Nr. 14 cis-Moll, Op. 131: I. Adagio ma non troppo e molto espressivo",
+  "parse": {
+   "catalog": [
+    "Op 131"
+   ],
+   "number": 14,
+   "key": "C# minor",
+   "genre": "quartet"
+  }
+ },
+ {
+  "title": "Messe h-Moll, BWV 232: Kyrie",
+  "parse": {
+   "catalog": [
+    "BWV 232"
+   ],
+   "key": "B minor",
+   "genre": "mass"
+  }
+ },
+ {
+  "title": "Symphonie fantastique, Op. 14: V. Songe d'une nuit du sabbat",
+  "parse": {
+   "catalog": [
+    "Op 14"
+   ],
+   "genre": "symphony",
+   "movement": {
+    "index": 5,
+    "title": "Songe d'une nuit du sabbat"
+   }
+  }
+ },
+ {
+  "title": "Carmen, Act 1: Habanera",
+  "parse": {
+   "catalog": [],
+   "movement": {
+    "title": "Habanera"
+   }
+  }
+ },
+ {
+  "title": "Symphony No. 7 in A Major, Op. 92: II. Allegretto (Live)",
+  "parse": {
+   "catalog": [
+    "Op 92"
+   ],
+   "number": 7,
+   "key": "A major",
+   "movement": {
+    "index": 2,
+    "title": "Allegretto"
+   }
+  }
+ },
+ {
+  "title": "Beethoven: Symphony No. 7 in A Major, Op. 92 - II. Allegretto",
+  "parse": {
+   "catalog": [
+    "Op 92"
+   ],
+   "number": 7,
+   "key": "A major",
+   "movement": {
+    "index": 2,
+    "title": "Allegretto"
+   }
+  }
+ },
+ {
+  "title": "Adagio for Strings, Op. 11",
+  "parse": {
+   "catalog": [
+    "Op 11"
+   ]
+  }
+ },
+ {
+  "title": "Canon in D Major",
+  "parse": {
+   "catalog": [],
+   "key": "D major"
+  }
+ },
+ {
+  "title": "Rhapsody in Blue",
+  "parse": {
+   "catalog": [],
+   "genre": "rhapsody"
+  }
+ },
+ {
+  "title": "Yesterday - Remastered 2009",
+  "parse": {
+   "catalog": []
+  }
+ },
+ {
+  "title": "Hey Jude",
+  "parse": {
+   "catalog": []
+  }
+ },
+ {
+  "title": "Stairway to Heaven - Remaster",
+  "parse": {
+   "catalog": []
+  }
+ },
+ {
+  "title": "Air on the G String",
+  "parse": {
+   "catalog": []
+  }
+ }
+]
