@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14243b"/>
+      <stop offset="1" stop-color="#08111f"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <rect x="100.5" y="100.5" width="823" height="823" rx="185" fill="none" stroke="#1c2c45" stroke-width="3"/>
+  <text x="512" y="660" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="480" fill="#eef0f4">M</text>
+  <line x1="332" y1="732" x2="692" y2="732" stroke="#e9b38a" stroke-width="14" stroke-linecap="round"/>
+</svg>

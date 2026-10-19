@@ -20,7 +20,6 @@ export function Player({ api }: Props) {
     return (
       <main className="player empty">
         <p className="muted">{t('nothingPlaying')}</p>
-        <DeviceSelect api={api} />
       </main>
     )
   }
@@ -76,7 +75,6 @@ export function Player({ api }: Props) {
       </div>
 
       <Queue next={api.next} now={now} />
-      <DeviceSelect api={api} />
     </main>
   )
 }
@@ -105,7 +103,7 @@ function Queue({ next, now }: { next?: sp.SpTrack; now: NowPlaying }) {
   )
 }
 
-function DeviceSelect({ api }: { api: PlayerApi }) {
+export function DeviceSelect({ api }: { api: PlayerApi }) {
   const t = useT()
   const [devices, setDevices] = useState<sp.SpDevice[]>([])
   const load = () => void sp.devices().then(setDevices, () => {})
@@ -114,8 +112,8 @@ function DeviceSelect({ api }: { api: PlayerApi }) {
 
   return (
     <label className="device">
-      <span>{t('device')}</span>
-      <select
+      <span className="sr-only">{t('device')}</span>
+      <select aria-label={t('device')}
         value={active}
         onFocus={load}
         onMouseDown={load}

@@ -327,3 +327,21 @@ export async function cycleSiblings(cycleQid: string, selfQid: string, lang: Lan
   } LIMIT 6`)
   return rows.map((r) => ({ qid: qidOf(r.w), title: r.l }))
 }
+
+/** Le opere più note del compositore con anno di composizione (P571), ordinate per notorietà (sitelinks). */
+export async function notableWorks(qid: string, lang: Lang): Promise<{ title: string; year: number }[]> {
+  if (!isQid(qid)) return []
+  const rows = await sparql(`SELECT ?w ?l ?d ?n WHERE {
+    ?w wdt:P86 wd:${qid} ; wdt:P571 ?d ; wikibase:sitelinks ?n .
+    FILTER(?n >= 4)
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "${lang},en" . ?w rdfs:label ?l }
+  } ORDER BY DESC(?n) LIMIT 80`, 30000)
+  const seen = new Set<string>()
+  return rows
+    .filter((r) => !/^\s*(?:[IVX]{1,5}|\d{1,2})[.)]\s/.test(r.l) && !seen.has(r.w) && !!seen.add(r.w))
+    .flatMap((r) => {
+      const y = year(r.d)
+      return y ? [{ title: r.l, year: +y }] : []
+    })
+    .slice(0, 30)
+}

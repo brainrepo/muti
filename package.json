@@ -26,5 +26,26 @@
     "electron-vite": "^5.0.0",
     "typescript": "^5.9.0",
     "vite": "^7.3.0"
+  },
+  "build": {
+    "appId": "dev.muti.app",
+    "productName": "Muti",
+    "directories": {
+      "buildResources": "resources",
+      "output": "dist"
+    },
+    "files": [
+      "out/**"
+    ],
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   }
 }

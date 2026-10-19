@@ -54,3 +54,13 @@ export function sameGenre(works: OoWork[], genre: string, exclude?: string): OoW
     .filter((w) => rank(w) < 2)
 }
 
+
+const EPOCHS = ['Medieval', 'Renaissance', 'Baroque', 'Classical', 'Early Romantic', 'Romantic', 'Late Romantic', '20th Century', 'Post-War', '21st Century']
+
+/** Tutti i compositori di Open Opus con anni di vita ed epoca (per la timeline). */
+export async function ooAllComposers(): Promise<OoComposer[]> {
+  const lists = await Promise.all(
+    EPOCHS.map((e) => fetchJson<{ composers?: OoComposer[] }>(`${OO}/composer/list/epoch/${encodeURIComponent(e)}.json`).then((r) => r.composers ?? [], () => []))
+  )
+  return lists.flat()
+}

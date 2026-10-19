@@ -2,12 +2,14 @@ import { useEffect, useMemo, useState } from 'react'
 import type { AuthStatus, Settings } from '../../shared/types.ts'
 import { InfoPanel } from './components/InfoPanel.tsx'
 import { Library } from './components/Library.tsx'
+import { Timeline } from './components/Timeline.tsx'
 import { Onboarding } from './components/Onboarding.tsx'
-import { Player } from './components/Player.tsx'
+import { DeviceSelect, Player } from './components/Player.tsx'
 import { SettingsDialog } from './components/SettingsDialog.tsx'
 import { albumMovements } from './lib/album.ts'
 import { toTrackCtx, useAsync } from './lib/hooks.ts'
 import { LangContext, useT } from './lib/i18n.tsx'
+import { applyPalette, extractPalette } from './lib/palette.ts'
 import { usePlayer } from './lib/player.ts'
 import * as sp from './lib/spotify.ts'
 
@@ -52,8 +54,10 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
 
   const [showSettings, setShowSettings] = useState(false)
   const [libOpen, setLibOpen] = useState(false)
+  const [tlOpen, setTlOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [search, setSearch] = useState<{ q: string; n: number }>()
+  const runSearch = (q: string) => (setQuery(q), setSearch({ q, n: Date.now() }), setLibOpen(true))
   const [recent, setRecent] = useState<sp.SpTrack[]>([]) // solo in memoria: vale per la sessione
 
   const save = (patch: Partial<Settings>) => void window.muti.settings.set(patch).then(onSettings)
@@ -65,6 +69,22 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
   const albumTracks = useAsync(() => (now ? sp.albumTracks(now.track.album) : Promise.resolve([])), [now?.track.album.id])
   const movements = useMemo(() => (now && albumTracks.data ? albumMovements(albumTracks.data, now.track) : []), [albumTracks.data, now?.track.id])
   const currentMovement = resolved.data?.movementIndex ?? movements.find((m) => m.track.id === now?.track.id)?.index
+
+  // palette dalla copertina (la più piccola basta); se non è leggibile resta quella di base
+  const images = now?.track.album.images
+  const coverUrl = images?.[images.length - 1]?.url
+  const artUrl = images?.[0]?.url
+  useEffect(() => {
+    let alive = true
+    if (!coverUrl) return applyPalette(null)
+    extractPalette(coverUrl).then(
+      (p) => alive && applyPalette(p),
+      () => alive && applyPalette(null)
+    )
+    return () => {
+      alive = false
+    }
+  }, [coverUrl])
 
   useEffect(() => {
     if (now) setRecent((r) => [now.track, ...r.filter((x) => x.id !== now.track.id)].slice(0, 30))
@@ -95,6 +115,8 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
   }
 
   return (
+    <>
+    {artUrl && <div key={artUrl} className="art" style={{ backgroundImage: `url(${artUrl})` }} aria-hidden />}
     <div className="app">
       <div className="sr-only" aria-live="polite">{now ? `${t('nowPlaying')}: ${now.track.name}` : ''}</div>
 
@@ -103,12 +125,14 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
           className="topsearch"
           onSubmit={(e) => {
             e.preventDefault()
-            if (query.trim()) (setSearch({ q: query.trim(), n: Date.now() }), setLibOpen(true))
+            if (query.trim()) runSearch(query.trim())
           }}
         >
           <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t('search')} aria-label={t('search')} />
         </form>
         <button onClick={() => setLibOpen((o) => !o)} aria-expanded={libOpen}>{t('library')}</button>
+        <button onClick={() => setTlOpen(true)}>{t('timeline')}</button>
+        <DeviceSelect api={api} />
         <button aria-label={t('settings')} title={t('settings')} onClick={() => setShowSettings(true)}>⚙</button>
       </header>
 
@@ -132,8 +156,17 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
         albumMovements={movements}
         currentMovement={currentMovement}
         onPlayMovement={playMovement}
-        onSearchSpotify={(q) => setSearch({ q, n: Date.now() })}
+        onSearchSpotify={runSearch}
       />
+
+      {tlOpen && (
+        <Timeline
+          lang={lang}
+          currentId={resolved.data?.composer?.openOpusId}
+          onSearch={runSearch}
+          onClose={() => setTlOpen(false)}
+        />
+      )}
 
       {libOpen && (
         <>
@@ -149,5 +182,6 @@ function Shell({ boot, onSettings, onLogout }: { boot: Boot; onSettings: (s: Set
         <SettingsDialog settings={settings} onChange={save} onLogout={onLogout} onClose={() => setShowSettings(false)} />
       )}
     </div>
+    </>
   )
 }

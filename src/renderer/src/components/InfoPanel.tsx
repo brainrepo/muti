@@ -3,6 +3,7 @@ import type { Composer, Lang, ResolvedTrack, SourceRef, TextBlock, Work, WorkCan
 import type { AlbumMovement } from '../lib/album.ts'
 import { openExternal, useAsync, type Async } from '../lib/hooks.ts'
 import { epochName, genreName, useT } from '../lib/i18n.tsx'
+import { EraSlot } from './EraSlot.tsx'
 
 type Props = {
   lang: Lang
@@ -65,13 +66,18 @@ export function InfoPanel(p: Props) {
                 </button>
               ))}
             </nav>
-            {tab === 'card' && <Card work={work} lang={p.lang} />}
+            {tab === 'card' && <Card work={work} composer={composer} lang={p.lang} onSearch={p.onSearchSpotify} />}
             {tab === 'history' && <History work={work} lang={p.lang} onSources={addSources} />}
             {tab === 'composer' && composer && <ComposerTab composer={composer} lang={p.lang} onSources={addSources} />}
             {tab === 'related' && <Related work={work} composer={composer} lang={p.lang} onSearch={p.onSearchSpotify} />}
           </>
         )}
-        {!work && composer && <ComposerTab composer={composer} lang={p.lang} onSources={addSources} />}
+        {!work && composer && (
+          <>
+            <EraSlot composer={composer} onSearch={p.onSearchSpotify} />
+            <ComposerTab composer={composer} lang={p.lang} onSources={addSources} />
+          </>
+        )}
 
         {r && <Sources sources={[...r.sources, ...extra]} />}
       </div>
@@ -137,7 +143,7 @@ const toRoman = (n: number) => {
 
 // ---------- scheda ----------
 
-function Card({ work, lang }: { work: Work; lang: Lang }) {
+function Card({ work, composer, lang, onSearch }: { work: Work; composer?: Composer; lang: Lang; onSearch: (q: string) => void }) {
   const t = useT()
   const fmtDate = (s?: string) => {
     if (!s) return s
@@ -165,6 +171,7 @@ function Card({ work, lang }: { work: Work; lang: Lang }) {
           </div>
         ))}
       </dl>
+      <EraSlot work={work} composer={composer} onSearch={onSearch} />
       {work.imslpUrl && (
         <button className="link" onClick={() => openExternal(work.imslpUrl!)}>
           {t('score')} ↗

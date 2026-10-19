@@ -21,7 +21,9 @@ const api: MutiApi = {
     composerText: (qid, lang) => call('meta:composerText', qid, lang),
     related: (w, lang) => call('meta:related', w, lang),
     search: (query, composerQid, lang) => call('meta:search', query, composerQid, lang),
-    setOverride: (key, qid) => call('meta:setOverride', key, qid)
+    setOverride: (key, qid) => call('meta:setOverride', key, qid),
+    timeline: () => call('meta:timeline'),
+    composerWorks: (name, birth, lang) => call('meta:composerWorks', name, birth, lang)
   },
   app: {
     openExternal: (url) => call('app:openExternal', url)

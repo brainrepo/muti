@@ -5,6 +5,7 @@ import * as auth from './auth.ts'
 import { setContact } from './metadata/http.ts'
 import { resolveTrack } from './metadata/resolve.ts'
 import { composerText, related, searchWorks, workText } from './metadata/text.ts'
+import { composerWorks, timeline } from './metadata/timeline.ts'
 import { isQid } from './metadata/wikidata.ts'
 import { getOverride, getSettings, setOverride, setSettings } from './store.ts'
 
@@ -64,6 +65,8 @@ export function registerIpc() {
     setOverride(key, qid)
   })
 
+  h('meta:timeline', () => timeline())
+  h('meta:composerWorks', (_e, name: string, _birth: number | undefined, l: Lang) => composerWorks(str(name, 200), lang(l)))
   h('app:openExternal', (_e, url: string) => {
     const u = new URL(str(url, 2000))
     if (u.protocol !== 'https:') throw new Error('Solo URL https')

@@ -101,6 +101,9 @@ export type Settings = {
   deviceId?: string
 }
 
+export type TimelineComposer = { id: string; name: string; fullName: string; birth?: number; death?: number; epoch: string }
+export type TimelineWork = { title: string; year: number }
+
 export type AuthStatus = { loggedIn: boolean; clientId: string }
 
 export interface MutiApi {
@@ -122,6 +125,8 @@ export interface MutiApi {
     related(work: WorkRef, lang: Lang): Promise<RelatedGroup[]>
     search(query: string, composerQid: string | undefined, lang: Lang): Promise<WorkCandidate[]>
     setOverride(overrideKey: string, qid: string | null): Promise<void>
+    timeline(): Promise<TimelineComposer[]>
+    composerWorks(fullName: string, birth: number | undefined, lang: Lang): Promise<TimelineWork[]>
   }
   app: {
     openExternal(url: string): Promise<void>
