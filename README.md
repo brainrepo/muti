@@ -25,6 +25,20 @@ Muti riproduce i brani da Spotify e, accanto alla traccia, mostra **cosa stai as
 
 Il riconoscimento brano → opera è deterministico (titolo, numero di catalogo, compositore tra gli artisti). Nessun modello AI tocca i contenuti Spotify.
 
+## Screenshot
+
+| | |
+|---|---|
+| ![Scheda della Sinfonia n. 5 di Beethoven con i quattro movimenti](docs/screenshots/1-scheda.png) | ![Storia del Requiem K. 626 di Mozart](docs/screenshots/2-storia.png) |
+| **Scheda**: Beethoven, Sinfonia n. 5 (Kleiber) | **Storia**: Mozart, Requiem K. 626 (Karajan) |
+| ![Biografia di Bach accanto alle Variazioni Goldberg](docs/screenshots/3-compositore.png) | ![Opere correlate alla Primavera di Vivaldi](docs/screenshots/4-correlate.png) |
+| **Compositore**: Bach, Variazioni Goldberg (Gould) | **Correlate**: Vivaldi, La Primavera (Il Giardino Armonico) |
+
+![Timeline dei compositori con Beethoven evidenziato e le sue opere principali come punti](docs/screenshots/5-timeline.png)
+<p align="center"><sub><b>Timeline</b>: compositori dal Rinascimento al Novecento, con le opere principali del compositore in ascolto.</sub></p>
+
+I colori dell'interfaccia derivano dalla copertina del disco in ascolto.
+
 ## Fonti
 
 [Wikidata](https://www.wikidata.org) (hub) · [Wikipedia](https://www.wikipedia.org) · [MusicBrainz](https://musicbrainz.org) · [Open Opus](https://openopus.org) · [IMSLP](https://imslp.org)
